@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #58e6b6;
+}
+h1 {
+  color: #fff;
+  font-size: 50px;
+}
+span::before {
+  content: "Functions";
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(126, 53, 26);
+  animation: word-switch 5s infinite;
+}
+@keyframes word-switch {
+  0% {
+    content: "Functions";
+  }
+  50% {
+    content: "Loops";
+  }
+  100% {
+    content: "Classes";
+  }
+}
